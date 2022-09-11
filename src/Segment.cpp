@@ -122,7 +122,7 @@ void Segment::enter(int nsegs){
 	// Motorway  advice to road users
 	// print notifications
 	
-	if(flag2==1 && temp2!=1){  // if received vehicles from the entrance && the number of vehicles serviced by the tolls < Ê+2Ê -->> print notification
+	if(flag2==1 && temp2!=1){  // if received vehicles from the entrance && the number of vehicles serviced by the tolls < ÃŠ+2ÃŠ -->> print notification
 		cout << "DELAYS in entering the node " << segment_serial_number << endl;
 		flag=0;
 	}
@@ -196,5 +196,5 @@ int Segment::get_ready_vehicles(){
 		if(vehicles_array[i]->is_ready()==true){ counter++;}
 	}
 	
-	return counter;	  // return the counter
+	return counter;	  // returns the counter
 }
